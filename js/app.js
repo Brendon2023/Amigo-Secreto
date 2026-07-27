@@ -6,6 +6,11 @@ function adicionar () {
         alert('Digite o nome do amigo!');
         return;
     }
+    if(amigos.includes(amigo.value)){
+        alert('Nome ja adicionado!');
+        return;
+    }
+
     let lista = document.getElementById('lista-amigos');
     amigos.push(amigo.value);
     if(lista.textContent == '') {
@@ -48,5 +53,6 @@ function reiniciar() {
     document.getElementById('lista-amigos').innerHTML = '';
     document.getElementById('lista-sorteio').innerHTML = '';
 }
+
 
 
