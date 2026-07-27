@@ -8,7 +8,11 @@ function adicionar () {
         lista.textContent = lista.textContent + ", " + amigo.value;
     }
     amigo.value = '';
-    
+
+function sortear() {
+   let sortear = document.getElementById('lista-sorteio');
 
 
+
+}
 }
